@@ -1,0 +1,178 @@
+<!--
+    Author: Ivan Pol
+    Date: 12/14/2020
+ -->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy your garden plot now.">
+    <title>Willow Gardens - Buy a Plot</title>
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="images/favicons/favicon-16x16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="images/favicons/favicon-32x32.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="images/favicons/android-chrome-192x192.png">
+    <link type="image/png" sizes="512x512" rel="icon" href="images/favicons/android-chrome-512x512.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css"/>
+    <script src="js/includeHTML.js"></script>
+    <script src="js/active.js"></script>
+</head>
+
+<body>
+    <a href="#mainContent" class="skipLink">Skip Menu</a>
+    <div data-include-html="html/header.html"></div>
+
+    <div class="container">
+        <main class="row m-0" id="mainContent">
+            <h1 class="col-12 text-center pt-4 pb-0">Thank you for your interest in Willow Gardens!</h1>
+
+            <section class="col p-0 my-4">
+                <h2 class="text-center my-2" >General Plot Information</h2>
+                <div class="row d-flex">
+                    <div class="col-12 col-md-6 d-flex flex-column my-2">
+                        <img src="images/gardenPlot.jpg"  alt="Image of Garden Plot" class="w-100 mb-4">
+                        <img src="images/gardenPlot2.jpg"  alt="Image of Garden Plot" class="w-100 mt-4">
+                    </div>
+
+                    <div class="col-12 col-md-6 d-flex flex-column my-2">
+                        <ul class="list-unstyled">
+                            <li class="my-3"><i class="fas fa-check color-green"></i> Our garden plots measure approximately 20' x 20' (400 sq.ft.)
+                            </li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> The maximum number of plots per gardener is 4 plots</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> Gardeners may work in their plots at any time of the year, provided they follow the garden rules</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> Only organic gardening methods are allowed</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> We do not till any sections of our gardens, which allows gardeners to plant perennials such as asparagus and strawberries and leave up fences, if desired, throughout the year</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> $15, $43, or $78 per plot/year, depending on your income level and size of household/garden family</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> Water is provided on site throughout the season</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> Garden tools are available for everyone to use</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> Free wood chips are provided gardener use</li>
+                            <li class="my-3"><i class="fas fa-check color-green"></i> We offer hay and row cover for sale on our application</li>
+                        </ul>
+
+                        <button class="btn btn-outline-success color-green" type="button" name="button">LEARN MORE</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="buyPlotForm">
+                <h2>Please submit the below form to request your garden plot.</h2>
+
+                <form action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Are you a returning gardener?</legend>
+
+                            <div class="d-flex justify-content-center py-3">
+                                <div class="custom-control custom-radio mx-5">
+                                    <input class="custom-control-input" id="returning-yes" type="radio" name="returning">
+                                    <label class="custom-control-label" for="returning-yes">Yes</label>
+                                </div>
+
+                                <div class="custom-control custom-radio mx-5">
+                                    <input class="custom-control-input" id="returning-no" type="radio" name="returning" checked>
+                                    <label class="custom-control-label" for="returning-no">No</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Your information</legend>
+                            <small class="pl-5">* - required fields</small>
+                            <div class="form-group row px-1 mx-0">
+                                <label for="firstName" class="col-sm-4 col-form-label">* First Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="firstname" class="form-control" id="firstName" style="background: white!important" placeholder="First Name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row px-1 mx-0">
+                                <label for="lastName" class="col-sm-4 col-form-label">* Last Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" name="lastname" class="form-control" id="lastName" placeholder="Last Name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row px-1 mx-0">
+                                <label for="inputEmail" class="col-sm-4 col-form-label">* Email</label>
+                                <div class="col-sm-8">
+                                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row px-1 mx-0">
+                                <label for="inputPhone" class="col-sm-4 col-form-label">* Phone</label>
+                                <div class="col-sm-8">
+                                    <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Phone" required>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Order details</legend>
+
+                            <div class="row d-flex px-1 mx-0 my-3">
+                                <label class="col-7 col-md-9" for="numberOfPlots">* Number of plots:<span class="badge bg-green font-weight-normal text-white">Limit of 4 plots per gardener</span></label>
+
+                                <select id="numberOfPlots" class="col-4 col-md-2 ml-auto mr-3 p-0" name="numberOfPlots" required>
+                                    <option value="" selected disabled>Select</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="03">4</option>
+                                </select>
+                            </div>
+
+                            <div class="row d-flex px-4 mx-0 my-5">
+                                <h3>Join a Garden Team!</h3>
+                                <p>Teams are a great way to get to know other gardeners and volunteer on your own schedule. You will not be asked
+                                  to work more than your required volunteer hours due. Check the box for each team you are interested in, we will email you more info</p>
+
+                                <div class="form-check">
+                                    <input type="checkbox" name="mentor" class="form-check-input my-3" id="mentor">
+                                    <label class="form-check-label my-2" for="mentor">New Garden Mentor</label>
+                                    <br>
+                                    <input type="checkbox" name="plot" class="form-check-input my-3" id="plot">
+                                    <label class="form-check-label my-2" for="plot">Plot Maintenance </label>
+                                    <br>
+                                    <input type="checkbox" name="water" class="form-check-input my-3" id="water">
+                                    <label class="form-check-label my-2" for="water">Water Maintenance </label>
+                                    <br>
+                                    <input type="checkbox" name="equipment" class="form-check-input my-3" id="equipment">
+                                    <label class="form-check-label my-2" for="equipment">Equipment Maintenance </label>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <div class="d-flex justify-content-center">
+                            <input type="submit" class="btn btn-large bg-green text-white mr-5">
+                            <input type="reset" class="btn btn-large btn-outline-success color-green ml-5">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div data-include-html="html/footer.html"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ec1a6f2b3.js" crossorigin="anonymous"></script>
+    <script>includeHTML();</script>
+    <script>activeMenu();</script>
+</body>
+</html>

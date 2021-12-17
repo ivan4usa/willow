@@ -1,0 +1,220 @@
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+hr {
+	border: 1px solid #00000030;
+	width: 100%;
+}
+
+p, h1, h2, h3, h4, h5 {
+	color: #7e551b;
+}
+
+body, p, a, blockquote {
+	font-family: 'Sriracha', cursive;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Itim', cursive;
+	text-transform: uppercase;
+}
+
+h2 {
+    background: aquamarine;
+	padding: .5em;
+	box-shadow: 1px 1px 4px 1px #8f551b;
+}
+
+footer {
+	background: aquamarine;
+}
+
+footer a {
+	color: #012169;
+}
+
+footer h4 {
+	text-decoration: underline;
+}
+
+form {
+	border: 1px solid #6C7D17;
+	padding: 0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 2px 2px #97ad1d82;
+	max-width: 600px;
+	margin: 2em auto;
+	background-color: white;
+}
+
+form legend {
+	padding: .5em;
+	background-color: #6C7D17;
+	text-align: center;
+	color: white;
+}
+
+form legend:first-child {
+	border-radius: 5px 5px 0 0;
+}
+
+.bg-green {
+	background-color: #6C7D17;
+}
+
+.bg-purple {
+	background-color: #012169;
+}
+
+.bg-aquamarine {
+	background-color: aquamarine;
+}
+
+.color-green {
+	color: #6C7D17;
+}
+
+.header-background {
+	background-image: url(../images/header.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	max-width: 1110px;
+	margin: auto!important;
+}
+
+.menu-link:hover, .menu-link:focus {
+	background-color: #012169;
+	border-radius: 5px;
+	transition: all .5s ease-out;
+}
+
+.menu-link_active {
+	background-color: #007bff;
+	font-weight: bold;
+}
+
+.img-overlay {
+    width: 350px;
+    height: 100%;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 80%, rgba(255,255,255,0.3) 100%);
+}
+
+.center {
+	max-width: 1110px;
+    margin: auto!important;
+	width: 100%;
+}
+
+.card {
+	height: 100%;
+	outline: none;
+	border: none;
+}
+
+.card-wrapper {
+	padding: .5em;
+	align-items: stretch;
+}
+
+.card-testimonial {
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.card-top {
+	background: linear-gradient(40deg,#45cafc,#303f9f);
+	height: 140px;
+	padding: 0;
+	margin: 0;
+}
+
+.card-testimonial_img {
+	margin: 70px 0 0 0;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+.fa-color {
+	color: white;
+}
+
+.text-large {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.call-now {
+	border: 3px dashed yellow;
+    padding: 0 20px;
+    border-radius: 10px;
+	color: white;
+}
+
+.top-icon {
+	font-size: 1.2em;
+	border: 2px solid yellow;
+	border-radius: 15px;
+	padding: 0.2em 0.3em;
+	color: yellow;
+}
+
+.top-icon:hover, .top-icon:focus {
+	background-color: yellow;
+	color: #012169;
+	transition: all .5s ease-out;
+}
+
+.call-now:hover, .call-now:focus {
+	text-decoration: none;
+	background-color: white;
+	color: #012169;
+	transition: all .5s ease-out;
+}
+
+.menu-li {
+	height: auto;
+}
+
+.li-style {
+	font-family: 'Itim', cursive;
+}
+
+.shadow {
+	box-shadow: 1px 1px 4px 1px #8f551b;
+}
+
+#buyPlotForm {
+	background-image: url(../images/veggieBackground.jpg);
+	background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+	width: 100%;
+}
+
+#list-icon {
+	font-size: 3em;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+	.li-style {
+		border-bottom: 1px solid white;
+	}
+}
+
+.skipLink {
+  	position: absolute;
+  	left: -1000px;
+}
+
+.skipLink:focus,
+.skipLink:active {
+    left: 0;
+}
